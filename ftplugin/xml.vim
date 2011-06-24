@@ -39,6 +39,9 @@ endif
 let b:last_wrap_tag_used = ""
 let b:last_wrap_atts_used = ""
 
+" There's no defined xml syntax for folding, so use indents
+setlocal foldmethod=indent
+
 " WrapTag -> Places an XML tag around a visual selection.            {{{1
 " Brad Phelan: Wrap the argument in an XML tag
 " Added nice GUI support to the dialogs. 
